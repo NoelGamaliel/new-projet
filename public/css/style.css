@@ -1,0 +1,292 @@
+/* Mes scripts css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend+Deca:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#f7f7f7;
+}
+#logo {
+    position: absolute;
+    left: 20px;
+    width: 140px;
+    height: 70px;
+    line-height: 30px;
+    padding: 10px;
+}
+.nav__bar {
+    background-color: #178CA4; /* rgba(206, 192, 0, 0.788); */
+    flex-wrap: wrap;
+    height: 70px;
+    font-family: 'Shippori Antique B1', sans-serif;
+    position: fixed;
+    width: 100%;
+    border: 2px #f7f7f7;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);
+
+}
+.nav__bar__links {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 70px;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: flex-start;
+
+}
+.nav__bar__links li {
+    list-style-type: none;
+    padding-right: 40px;
+
+}
+.nav__bar__links li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav__bar__links li a:hover {
+    color: white;
+}
+
+#active {
+    background-color: white;
+    padding: 0px 10px;
+    margin: 0px 15px;
+    color: black;
+}
+/* =================== Banniere__Page ====================== */
+.bannier__page {
+    height: 80vh;
+    background-image: linear-gradient(#F9F7F0, rgba(0, 0, 0, 0.1)),  url('https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content:flex-start;
+    justify-items: center;
+    align-content: center;
+}
+.bannier__page h2 {
+    color: black;
+    font-size: 3em;
+    font-family: 'Archivo Black', sans-serif;
+    height: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 60px;
+    left: 20px;
+}
+.bannier__page p {
+    color: black;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    font-size: 1rem;
+    font-family: 'Rubit', sans-serif;
+    margin: 60px;
+    margin-top: -50px;
+}
+
+.bannier__page a {
+    border: 0px solid black;
+    border-radius: 15px 15px 15px 15px;
+    height: 50px;
+    margin: 60px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #178CA4;
+    color: black;
+}
+.bannier__page a:hover {
+    background-color:black;
+    color: white;
+}
+
+/* ==================== Mes Projets =================== */
+
+.container__projets {
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+.item__projet {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+    width: 600px;
+    border: 1px solid #dddd;
+    box-shadow: 1px 2px 1px rgba(187, 189, 185, 0.7);
+    border-radius: 5px 5px 5px 5px;
+    justify-content: center;
+    justify-items: center;
+    text-align: justify;
+    font-family: 'Shippori Antique B1', sans-serif;
+    color: black;
+}
+
+.item__projet a {
+    text-decoration: none;
+    color: black;
+}
+.item__projet:hover {
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);
+    transform:rotate(2deg);
+    position:sticky;
+}
+
+.projets__title {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h4 {
+    justify-items: center;
+    text-align: center;
+}
+h5 {
+    border:#Fdff12 3px solid;
+    background-color: #Fdff12;
+    width: 70px;
+    margin: auto;
+    padding: 0 1px;
+}
+
+ /* ==================== ENd Projets =========================== */
+/* ===================== Notre Mission ========================= */
+.mission__text {
+    background-color: #178CA4;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f7f7f7;
+}
+
+.mission__text span {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.mission__card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.mission__item {
+    height: 300px;
+    width: 300px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    padding: 0px 1px 1px;
+    border: 1px solid;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.mission__item:hover {
+    transform: scale(1.1);
+}
+.mission__item p {
+    margin-top: 3px;
+    color: black;
+    font-size: 1.2rem;
+}
+.mission__forme {
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    border-radius: 0px 0px 80px 80px;
+    margin-top: -200px;
+    margin-left: -50px;
+    opacity: 0.8;
+    position: absolute;  
+}
+
+@keyframes mon__animation {
+    0% {
+        background-color: red;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        right: 60%;
+    }
+}
+hr {
+    height: 1px;
+    background-color:#178CA4;
+    border: none;
+    margin: auto;
+  }
+i {
+    margin-bottom: 20px;
+    margin-top: 10px;   
+}
+.color__icone {
+    color: #f7f7f7;
+}
+
+/* ============== About As ======================== */
+.about__as {
+    background-color: #178CA4;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: #000000;
+    color: #f7f7f7;
+}
+
+element.style {
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-color: rgb(244, 121, 50);
+    width: 150px;
+    margin: 0px auto;
+}
+/* ============= Media Query ====================== */
+@media (max-width:480px) {
+    body {
+        background-color: #dddd;
+    }
+    .nav__bar__links {
+        display: none;
+    }
+    .container__projets {
+        flex-direction: column;
+
+    }
+    .missio__item {
+        flex-direction: column;
+        width: 400px; 
+    }
+    .item__projet {
+        flex-direction: column;
+        width: 400px;
+    }
+    .bannier__page h2 {
+        margin-top: -20px;
+    }
+}
+
