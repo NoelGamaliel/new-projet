@@ -1,17 +1,20 @@
 /* Mes scripts css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend+Deca:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Nunito:wght@200&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color:#f7f7f7;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 #logo {
     position: absolute;
@@ -30,6 +33,7 @@ body {
     width: 100%;
     border: 2px #f7f7f7;
     box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);
+    z-index: 99;
 
 }
 .nav__bar__links {
@@ -110,64 +114,28 @@ body {
 .bannier__page a:hover {
     background-color:black;
     color: white;
+    text-decoration: none;
 }
 
 /* ==================== Mes Projets =================== */
 
 .container__projets {
     display: flex;
-    margin: 20px;
+    margin: 0 20px;
     flex-direction: row;
     justify-content: center;
+    background-color: #dddd;
 }
-.item__projet {
-    background-color: white;
-    padding: 10px;
-    margin: 10px;
-    height: 200px;
-    width: 600px;
-    border: 1px solid #dddd;
-    box-shadow: 1px 2px 1px rgba(187, 189, 185, 0.7);
-    border-radius: 5px 5px 5px 5px;
-    justify-content: center;
-    justify-items: center;
-    text-align: justify;
-    font-family: 'Shippori Antique B1', sans-serif;
-    color: black;
-}
-
-.item__projet a {
-    text-decoration: none;
-    color: black;
-}
-.item__projet:hover {
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);
-    transform:rotate(2deg);
-    position:sticky;
-}
-
-.projets__title {
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    color: black;
-    margin-bottom: 5px;
-    font-weight: bold;
-    text-align: center;
-}
-
-h4 {
-    justify-items: center;
-    text-align: center;
-}
-h5 {
-    border:#Fdff12 3px solid;
-    background-color: #Fdff12;
-    width: 70px;
-    margin: auto;
-    padding: 0 1px;
+.item_projets {
+    padding: 20px;
+    margin: 0 20px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
  /* ==================== ENd Projets =========================== */
+
 /* ===================== Notre Mission ========================= */
 .mission__text {
     background-color: #178CA4;
@@ -204,6 +172,8 @@ h5 {
 }
 .mission__item:hover {
     transform: scale(1.1);
+    z-index: 99;
+    text-decoration: none;
 }
 .mission__item p {
     margin-top: 3px;
