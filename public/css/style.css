@@ -167,34 +167,74 @@ body {
 
 .container__projets {
     display: flex;
-    margin: 0 20px;
     flex-direction: row;
     justify-content: center;
+    border-color: rgb(244, 121, 50);
 }
-.item_projets {
-    height: 300px;
-    width: 650px;
-    padding: 20px;
-    margin: 0 20px;
-    border: 1px solid #f7f7f7;
-    border-radius: 5px 5px;
-    box-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    flex-direction: row;
+.card__projets {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+    width: 300px;
+    height: 450px;
 }
-.projet__title h4 {
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    font-weight: bold;
-    text-align: center;
-    align-items: center;
+.card__projets__item img {
+    width: 100%;
 }
-.projet__title .container__projets a {
+.card__projets__item p {
+    margin: 20px;
+    text-align: left;   
+}
+.card__projets__item a {
+    border: 0px solid black;
+    border-radius: 15px 15px 15px 15px;
+    height: 50px;
+    margin: 20px;
+    padding: 10px 20px;
     text-decoration: none;
+    background-color: #178CA4;
+    color: black;
 }
+
  /* ==================== ENd Projets =========================== */
+
+/* ============== About As ======================== */
+.About {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-color: rgb(244, 121, 50);
+}
+.about__card {
+    margin: 0 20px;
+    margin-top: 20px;
+}
+.card__item {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+    width: 300px;
+    height: 450px;
+}
+.card__item img {
+    width: 100%;
+}
+.card__item p {
+    margin: 20px;
+    text-align: left;   
+}
+.card__item a {
+    border: 0px solid black;
+    border-radius: 15px 15px 15px 15px;
+    height: 50px;
+    margin: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #178CA4;
+    color: black;
+}
+
+
 
  /* ==================== Animation de la page ================= */
 @keyframes mon__animation {
@@ -222,13 +262,6 @@ i {
     color: #f7f7f7;
 }
 
-/* ============== About As ======================== */
-.about__as {
-    background-color: #178CA4;
-    margin-bottom: 20px;
-}
-
-
 footer {
     background-color: #000000;
     color: #f7f7f7;
@@ -240,13 +273,6 @@ element.style {
     border-color: rgb(244, 121, 50);
     width: 150px;
     margin: 0px auto;
-}
-
-.active {
-    color: #ff0000;
-    font-weight: bolder;
-    border-bottom: 3px solid #000000;
-    text-align: center;
 }
 
 /* ============= Media Query ====================== */
