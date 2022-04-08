@@ -165,7 +165,7 @@ body {
 
 /* ==================== Mes Projets =================== */
 
-.container__projets {
+.projet__title {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -175,7 +175,8 @@ body {
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 50px;
-    width: 300px;
+    margin: 0 20px;
+    width: 600px;
     height: 450px;
 }
 .card__projets__item img {
@@ -234,7 +235,20 @@ body {
     color: black;
 }
 
+/* ===================== Contact ============================== */
+.contact_column {
+    background-color: #178CA4;
+    margin-bottom: 20px;
+}
+.contact_iframe {
+    background-color: #000000;
+}
+.form_items {
+    margin: 0px 20px;
+}
 
+
+/* ===================== END Contact =========================== */
 
  /* ==================== Animation de la page ================= */
 @keyframes mon__animation {
@@ -254,12 +268,9 @@ hr {
     border: none;
     margin: auto;
   }
-i {
-    margin-bottom: 20px;
-    margin-top: 10px;   
-}
 .color__icone {
     color: #f7f7f7;
+    margin-top: 20px;
 }
 
 footer {
