@@ -161,6 +161,10 @@ body {
     color: black;
     font-size: 1.2rem;
 }
+.color__icone {
+    color: #f7f7f7;
+    margin-top: 20px;
+}
 /* ============ END mission ===================== */
 
 /* ==================== Mes Projets =================== */
@@ -197,7 +201,7 @@ body {
     color: black;
 }
 
- /* ==================== ENd Projets =========================== */
+/* ==================== ENd Projets =========================== */
 
 /* ============== About As ======================== */
 .About {
@@ -240,15 +244,34 @@ body {
     background-color: #178CA4;
     margin-bottom: 20px;
 }
-.contact_iframe {
-    background-color: #000000;
-}
+
 .form_items {
     margin: 0px 20px;
 }
 
-
 /* ===================== END Contact =========================== */
+
+/* ===================== Footer ================================ */
+hr {
+    height: 1px;
+    background-color:#178CA4;
+    border: none;
+    margin: auto;
+  }
+
+footer {
+    background-color: #000000;
+    color: #f7f7f7;
+}
+.copy {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ===================== END Footer ============================ */
 
  /* ==================== Animation de la page ================= */
 @keyframes mon__animation {
@@ -262,29 +285,7 @@ body {
         right: 60%;
     }
 }
-hr {
-    height: 1px;
-    background-color:#178CA4;
-    border: none;
-    margin: auto;
-  }
-.color__icone {
-    color: #f7f7f7;
-    margin-top: 20px;
-}
 
-footer {
-    background-color: #000000;
-    color: #f7f7f7;
-}
-
-element.style {
-    border-style: solid;
-    border-bottom-width: 1px;
-    border-color: rgb(244, 121, 50);
-    width: 150px;
-    margin: 0px auto;
-}
 
 /* ============= Media Query ====================== */
 @media (max-width:650px) {
