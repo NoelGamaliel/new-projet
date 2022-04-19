@@ -19,17 +19,22 @@
         
         <!-- NAV-BAR de la page -->
         <nav class="nav__bar">
-            <a href="#">
-                <img src="./public/img/LOGO NDTechnH&C.png" alt="logo de la page" id="logo">
-            </a>
+            <div class="container-fluid">
+                <a href="#">
+                    <img src="./public/img/LOGO NDTechnH&C.png" alt="logo de la page" id="logo">
+                </a>
 
-            <ul class="nav__bar__links">
-                <li id="active"><a href="#"><i class="fa fa-home fa-lg"></i>&nbsp; Accueil</a></li>
-                <li><a href="#"><i class="fa fa-calendar fa-lg"></i>&nbsp; Notre Mission</a></li>  
-                <li><a href="#mes__projets"><i class="fa fa-address-book fa-lg"></i>&nbsp; Nos Projets</a></li>
-                <li><a href="#"><i class="fa fa-feed fa-lg"></i>&nbsp; About As</a></li>
-                <li><a href="#"><i class="fa fa-phone fa-lg"></i>&nbsp; Contact</a></li>
-            </ul>
+                <ul class="nav__bar__links">
+                    <li id="active"><a href="#"><i class="fa fa-home fa-lg"></i>&nbsp; Accueil</a></li>
+                    <li><a href="#"><i class="fa fa-calendar fa-lg"></i>&nbsp; Notre Mission</a></li>  
+                    <li><a href="#mes__projets"><i class="fa fa-book fa-lg"></i>&nbsp; Nos Projets</a></li>
+                    <li><a href="#"><i class="fa fa-feed fa-lg"></i>&nbsp; About As</a></li>
+                    <li><a href="#"><i class="fa fa-phone fa-lg"></i>&nbsp; Contact</a></li>
+                    <li><a href="#" class="btn-menu">Menu</a></li>
+                </ul>
+                                
+            </div>
+
         </nav>
         <!-- END NAV-BAR de la page -->
         
@@ -133,27 +138,59 @@
 
         <!-- Conctact -->
             <section class="contact_column">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col contact_iframe">
-                            <h4>Nous sommes NDTECHHUB - CONSULT</h4> <br>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31826.935088714494!2d15.286019148299888!3d-4.342051213680009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a314ccc13ceeb%3A0xb8b76e13c8724b20!2sLuozi%2C%20Kinshasa!5e0!3m2!1sfr!2scd!4v1649413756651!5m2!1sfr!2scd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="container">
+                    <h4>Contactez nous partout</h4>
+                    <div class="contact">
+                        <div class="item-contact">
+                            <i class="fa fa-home fa-3x" aria-hidden="true"></i>
+                            <div class="item-link-contact">
+                                <h4>Adresse</h4>
+                                <span>
+                                    19, Av. LUOZI, LODJA, KASA-VUBU,
+                                    Kinshasa, DRC
+                                </span>
+                            </div>
                         </div>
-                        <div class="col contact_form">
-                            <h4>Ecrivez sans complaisance</h4>
-                            <div class="form_items">
-                                <form action="/action_page.php">
-                                    <input class="form-control rounded-0 mb-2" type="text" placeholder="Your name" aria-label="default input example">
-                                    <input class="form-control rounded-0 mb-2" type="email" placeholder="Your email adress" aria-label="default input example">
-                                    <input class="form-control rounded-0 mb-2" type="email" placeholder="subjet" aria-label="default input example">
-                                    
-                                    <textarea class="form-control mb-2" id="exampleFormControlTextarea1" rows="6"></textarea>
-                    
-                                    <button type="submit" class="btn btn-success rounded-0 mb-4" style="width: 100%;"> SEND</button>
-                                </form>
+                        <div class="item-contact">
+                            <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+                            <div class="item-link-contact">
+                                <h4>Telephone</h4>
+                                <span>
+                                    +243 81 380 7219, 89 746 3031 .
+                                </span>
+                            </div>
+                        </div>
+                        <div class="item-contact">
+                            <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                            <div class="item-link-contact">
+                                <h4>E-mail</h4>
+                                <span>
+                                    noeldiamona@ndtechhub.tech
+                                </span>
                             </div>
                         </div>
                     </div>
+                    <div class="contact_form">
+                        <h4>Ecrivez-nous sans complaisance</h4>
+                        <p>
+                            Nous sommes prêt à accepter vos suggestion, qui va nous aider à mieux arranger les choses.
+                        </p>
+                        <div class="form_items">
+                            <form action="/action_page.php">
+                                <label for="name">Name</label>
+                                <input class="form-control  mb-2" type="text" placeholder="Your name" aria-label="default input example">
+                                <label for="mail">Email</label>
+                                <input class="form-control  mb-2" type="email" placeholder="Your email adress" aria-label="default input example">
+                                <label for="subjet">subjet</label>
+                                <input class="form-control  mb-2" type="email" placeholder="subjet" aria-label="default input example">
+                                <label for="message">Message</label>
+                                <textarea class="form-control mb-2" id="exampleFormControlTextarea1" rows="9"></textarea>
+                    
+                                <button type="submit" class="btn btn-success rounded-0 mb-4" style="width: 100%;"> SEND</button>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -161,9 +198,25 @@
 
         <!-- Footer de la Page -->
             <footer>
-                <a href="#" class="copy">
-                    <span>&copy; NDTECHHUB - Consult</span>                    
-                </a>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            1
+                        </div>
+                        <div class="col">
+                            2
+                        </div>
+                        <div class="col">
+                            3
+                        </div>
+                        <div class="col">
+                            4
+                        </div>
+                    </div>
+                </div>
+                <span>&copy; NDTECHHUB - Consult</span>                    
+                
             </footer>
         <!-- END Footer de la Page -->
     </body>
