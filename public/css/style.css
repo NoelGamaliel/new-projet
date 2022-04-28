@@ -1,5 +1,5 @@
 /* Mes scripts css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Nunito:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import "/public/fontawesome-free-6.0.0-web/css/all.min.css";
@@ -30,12 +30,11 @@ body {
     line-height: 30px;
     padding: 10px;
 }
-.btn-menu {
-    border: 1px #000000 solid;
-    padding: 5px 5px;
-    border-radius: 5px 5px;
+#btn-menu {
     display: none;
-
+}
+.btn-menu-visible {
+    display: none;
 }
 .nav__bar {
     background-color: #178CA4; /* rgba(206, 192, 0, 0.788); */
@@ -93,10 +92,10 @@ body {
     justify-items: center;
     align-content: center;
 }
-.bannier__page h2 {
+.bannier__page h4 {
     color: black;
-    font-size: 3em;
-    font-family: 'Archivo Black', sans-serif;
+    font-size: 3.5em;
+    font-family: 'Inter', sans-serif;
     height: 80px;
     text-transform: uppercase;
     font-weight: bold;
@@ -140,11 +139,10 @@ body {
     color: #f7f7f7;
 }
 
-.mission__text h4 {
-    font-size: 1.3rem;
+.mission__text h3 {
     text-transform: uppercase;
     color: black;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     font-weight: bold;
 }
 .mission__card {
@@ -165,8 +163,11 @@ body {
     box-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .mission__item:hover {
-    transform: scale(1.1);
-    z-index: 99;
+    transform: rotate(2deg);
+    transition: calc(2s);
+    opacity: 12;
+    color:white;
+    z-index: 1;
     text-decoration: none;
 }
 .mission__item p {
@@ -181,37 +182,33 @@ body {
 /* ============ END mission ===================== */
 
 /* ==================== Mes Projets =================== */
-
-.projet__title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-color: rgb(244, 121, 50);
+.projet__title h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
-.card__projets {
-    border-radius: 5px 5px 5px 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 50px;
+.card__projet {
+    border: #f4f9f9  solid 1px;
+    border-radius: 5px 5px;
+    box-shadow: 0 4px  8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card__items {
     margin: 0 20px;
-    width: 600px;
-    height: 450px;
+    margin-bottom: 0 20px;
 }
-.card__projets__item img {
-    width: 100%;
-}
-.card__projets__item p {
-    margin: 20px;
-    text-align: left;   
-}
-.card__projets__item a {
-    border: 0px solid black;
-    border-radius: 15px 15px 15px 15px;
-    height: 50px;
-    margin: 20px;
-    padding: 10px 20px;
+#card__image {
     text-decoration: none;
-    background-color: #178CA4;
-    color: black;
+    color: #000000;
+}
+#card__image p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#card__image h4 {
+    margin-top: 20px;    
+}
+.card__projet img {
+    width: 100%;
 }
 
 /* ==================== ENd Projets =========================== */
@@ -264,10 +261,14 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
-.contact-form {
-    border: rgb(244, 121, 50) 2px solid;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.contact_form p {
+    text-align: center;
 }
+form {
+    width: 80%;
+    margin: auto;
+}
+
 .form_items {
     margin: 0px;
 }
@@ -300,7 +301,7 @@ body {
     align-content: center;
     align-items: center;
 }
-.item-link-contact h4, span {
+.item-link-contact h4 {
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -311,42 +312,69 @@ body {
 hr {
     height: 1px;
     background-color:#178CA4;
-    border: none;
-    margin: auto;
-  }
+}
 
 footer {
     background-color: #000000;
     color: #f7f7f7;
 }
-.copy {
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
+span {
+    color: #178CA4;
+}
+span.border-top {
+    height: 5px;
+    display: inline-block;
+    width: 60px;
+    position: relative;
+    margin-left: -30px;
+    left: 50%;
 }
 
 /* ===================== END Footer ============================ */
 
  /* ==================== Animation de la page ================= */
-@keyframes mon__animation {
-    0% {
-        background-color: red;
-    }
-    50% {
-        left: 50%;
-    }
-    100% {
-        right: 60%;
-    }
+#rainbow {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 70%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+}
+#rainbow-1 {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
 }
 
 
 /* ============= Media Query ====================== */
 @media (max-width:650px) {
-    .btn-menu {
-        visibility:visible;
+    .bannier__page {
+        height: 105vh;
+    }
+    .bannier__page p {
+        margin-top: 0px;
+    }
+    .btn-menu-visible {
+        visibility: visible;
+        background-color: #178CA4;
+        float: right;
+        margin-top: 20px;
+    }
+    #btn-menu {
+        visibility: visible;
     }
     body {
         background-color: #dddd;

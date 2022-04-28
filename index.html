@@ -23,18 +23,18 @@
                 <a href="#">
                     <img src="./public/img/LOGO NDTechnH&C.png" alt="logo de la page" id="logo">
                 </a>
-
-                <ul class="nav__bar__links">
-                    <li id="active"><a href="#"><i class="fa fa-home fa-lg"></i>&nbsp; Accueil</a></li>
-                    <li><a href="#"><i class="fa fa-calendar fa-lg"></i>&nbsp; Notre Mission</a></li>  
-                    <li><a href="#mes__projets"><i class="fa fa-book fa-lg"></i>&nbsp; Nos Projets</a></li>
-                    <li><a href="#"><i class="fa fa-feed fa-lg"></i>&nbsp; About As</a></li>
-                    <li><a href="#"><i class="fa fa-phone fa-lg"></i>&nbsp; Contact</a></li>
-                    <li><a href="#" class="btn-menu">Menu</a></li>
-                </ul>
-                                
+                <div >
+                    <ul class="nav__bar__links">
+                        <li id="active"><a href="#"><i class="fa fa-home fa-lg"></i>&nbsp; Accueil</a></li>
+                        <li><a href="#"><i class="fa fa-calendar fa-lg"></i>&nbsp; Notre Mission</a></li>  
+                        <li><a href="#mes__projets"><i class="fa fa-book fa-lg"></i>&nbsp; Nos Projets</a></li>
+                        <li><a href="#"><i class="fa fa-feed fa-lg"></i>&nbsp; About As</a></li>
+                        <li><a href="#"><i class="fa fa-phone fa-lg"></i>&nbsp; Contact</a></li>
+                    </ul> 
+                    <button  id="btn-menu">Menu</button>
+                    <button class="btn-menu-visible">Menu</button>                   
+                </div>          
             </div>
-
         </nav>
         <!-- END NAV-BAR de la page -->
         
@@ -43,65 +43,123 @@
         <div class="bannier__page">
             <br><br><br><br><br>
             <div class="container-fluid">
-                <h2>NDTechHUB - Consult</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus expedita laborum qui?,<br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptate placeat impedit tempora quos. <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nam nostrum repellendus ab non!
-                </p>
-                <a href="">Pour plus d'information »</a>            
+                <div class="row mt-4 mb-4">
+                    <div class="col-6 col-md-6 text-left ">
+                        <h4>NDTechHUB - Consult</h4>
+                        <br><br>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus expedita laborum qui?,
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptate placeat impedit tempora quos.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor odio doloremque dicta.
+                        </p>
+                        <a href="">Pour plus d'information »</a>                         
+                    </div>
+                    <div class="col-md-6">
+                        <div id="rainbow">
+                            
+                        </div>
+                        <div id="rainbow-1">
+                        
+                        </div>
+                    </div>
+                </div>
+           
             </div>
         </div> 
         <!-- ENd Banniere de la page -->
 
         <!-- Notre mission-->
-        <div class="mission__text">
-            <br>
-            <div class="container-fluid">
-                <h4>Notre Mission</h4>
+            <section class="mission__text">
                 <br>
-                <div class="mission__card mb-2">
-                    <div class="mission__item">
-                        <i class="fa fa-archive fa-4x color__icone" aria-hidden="true" ></i>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam quisquam quia.
-                        </p>
-                    </div>
-                    <div class="mission__item">
-                        <i class="fa fa-database fa-4x color__icone" aria-hidden="true" ></i>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae exercitationem magnam?
-                        </p>
-                    </div>
-                    <div class="mission__item">
-                        <i class="fa fa-magic fa-4x color__icone" aria-hidden="true" ></i>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora excepturi obcaecati ab!
-                        </p>
+                <div class="container-fluid">
+                    <h3>Notre Mission</h3>
+                    <br>
+                    <div class="mission__card mb-2">
+                        <div class="mission__item">
+                            <i class="fa fa-archive fa-4x color__icone" aria-hidden="true" ></i>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam quisquam quia.
+                            </p>
+                        </div>
+                        <div class="mission__item">
+                            <i class="fa fa-database fa-4x color__icone" aria-hidden="true" ></i>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae exercitationem magnam?
+                            </p>
+                        </div>
+                        <div class="mission__item">
+                            <i class="fa fa-magic fa-4x color__icone" aria-hidden="true" ></i>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora excepturi obcaecati ab!
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
         <!-- END notre mission-->
 
         <!-- Mes Projets -->
-            <div class="projet__title">
-                <div class="container-fluid">
+            <section class="projet__title">
+                <div class="container">
                     <h3>NOS PROJETS</h3>
-                    <div class="row">
-                        <div class="col">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos soluta corrupti cumque sequi tempora quae iure.
-                            </p>
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-4">
+                            <div class="card__projet">
+                                <img src="./public/img/moquette.jpg" alt="rideau" height="450px" width="300px"> 
+                                <div class="card__items">
+                                    <a href="#" id="card__image">
+                                        <h4>Projet 1</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos soluta corrupti cumque sequi tempora quae iure.
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam accusamus harum quas laborum voluptatem reiciendis totam quos. Eum atque asperiores assumenda eligendi totam. Nobis, maiores voluptatibus! Provident sapiente sed repudiandae.
-                            </p>
+                        <div class="col-md-6 mb-4">
+                            <div class="card__projet">
+                                <img src="./public/img/drap.jfif" alt="rideau" height="450px" width="300px"> 
+                                <div class="card__items">
+                                    <a href="#" id="card__image">
+                                        <h4>Projet 2</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos soluta corrupti cumque sequi tempora quae iure.
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card__projet">
+                                <img src="./public/img/moquette--.jfif" alt="rideau" height="450px" width="300px"> 
+                                <div class="card__items">
+                                    <a href="#" id="card__image">
+                                        <h4>Projet 3</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos soluta corrupti cumque sequi tempora quae iure.
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card__projet">
+                                <img src="./public/img/tige-rideaux.jpeg" alt="rideau" height="450px" width="300px"> 
+                                <div class="card__items">
+                                    <a href="#" id="card__image">
+                                        <h4>Projet 4</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos soluta corrupti cumque sequi tempora quae iure.
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>             
-            </div>
+            </section>
         <!-- End Projets -->
 
         <!-- About As -->
@@ -145,28 +203,28 @@
                             <i class="fa fa-home fa-3x" aria-hidden="true"></i>
                             <div class="item-link-contact">
                                 <h4>Adresse</h4>
-                                <span>
+                                <p>
                                     19, Av. LUOZI, LODJA, KASA-VUBU,
                                     Kinshasa, DRC
-                                </span>
+                                </p>
                             </div>
                         </div>
                         <div class="item-contact">
                             <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
                             <div class="item-link-contact">
                                 <h4>Telephone</h4>
-                                <span>
+                                <p>
                                     +243 81 380 7219, 89 746 3031 .
-                                </span>
+                                </p>
                             </div>
                         </div>
                         <div class="item-contact">
                             <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
                             <div class="item-link-contact">
                                 <h4>E-mail</h4>
-                                <span>
+                                <p>
                                     noeldiamona@ndtechhub.tech
-                                </span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -178,45 +236,51 @@
                         <div class="form_items">
                             <form action="/action_page.php">
                                 <label for="name">Name</label>
-                                <input class="form-control  mb-2" type="text" placeholder="Your name" aria-label="default input example">
+                                <input class="form-control  mb-2" type="text" placeholder="e.g : Noël DIAMONA" id="name" aria-label="default input example">
                                 <label for="mail">Email</label>
-                                <input class="form-control  mb-2" type="email" placeholder="Your email adress" aria-label="default input example">
+                                <input class="form-control  mb-2" type="email" placeholder="e.g :infos@ndtechhub.tech" id="mail" aria-label="default input example">
                                 <label for="subjet">subjet</label>
-                                <input class="form-control  mb-2" type="email" placeholder="subjet" aria-label="default input example">
+                                <input class="form-control  mb-2" type="text" placeholder="subjet" name="subjet" id="subjet" aria-label="default input example">
                                 <label for="message">Message</label>
-                                <textarea class="form-control mb-2" id="exampleFormControlTextarea1" rows="9"></textarea>
+                                <textarea class="form-control mb-2" id="exampleFormControlTextarea1"  id="message" name="message" rows="9"></textarea>
                     
                                 <button type="submit" class="btn btn-success rounded-0 mb-4" style="width: 100%;"> SEND</button>
                             </form>
                         </div>
                     </div>
-
                 </div>
             </section>
 
         <!-- END Contact -->
 
         <!-- Footer de la Page -->
-            <footer>
-                
+            <footer>  
                 <div class="container">
                     <div class="row">
-                        <div class="col">
-                            1
+                        <div class="col-md-3">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error officia assumenda!
+                            </p>
                         </div>
-                        <div class="col">
-                            2
+                        <div class="col-md-3">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error officia assumenda!
+                            </p>
                         </div>
-                        <div class="col">
-                            3
+                        <div class="col-md-3">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error officia assumenda!
+                            </p>
                         </div>
-                        <div class="col">
-                            4
+                        <div class="col-md-3">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error officia assumenda!
+                            </p>
                         </div>
                     </div>
-                </div>
-                <span>&copy; NDTECHHUB - Consult</span>                    
-                
+                    <hr>
+                    <p class="center">&copy; NDTECHHUB - Consult</p>
+                </div>       
             </footer>
         <!-- END Footer de la Page -->
     </body>
