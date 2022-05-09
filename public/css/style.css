@@ -1,7 +1,7 @@
 /* Mes scripts css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Nunito:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 @import "/public/fontawesome-free-6.0.0-web/css/all.min.css";
 * {
     box-sizing: border-box;
@@ -82,7 +82,7 @@ body {
 /* =================== Banniere__Page ====================== */
 .bannier__page {
     height: 80vh;
-    background-image: linear-gradient(#F9F7F0, rgba(0, 0, 0, 0.1)),  url('https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg');
+    background-image: linear-gradient(#d7d4cc, rgba(0, 0, 0, 0.1)),  url('https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-attachment: fixed;
@@ -104,11 +104,12 @@ body {
 }
 .bannier__page p {
     color: black;
+    text-align: justify;
     justify-content: center;
     justify-items: center;
     align-content: center;
     font-size: 1rem;
-    font-family: 'Rubit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 60px;
     margin-top: -50px;
 }
@@ -188,10 +189,17 @@ body {
     font-weight: bold;
 }
 .card__projet {
-    border: #f4f9f9  solid 1px;
+    border: #dcdcdc  solid 1px;
     border-radius: 5px 5px;
+}
+.card__projet:hover {
+    background-color: #f7f7f7;
+    /* transition: calc(0.5s);
+    transform: rotate(1deg);
+    */
     box-shadow: 0 4px  8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .card__items {
     margin: 0 20px;
     margin-bottom: 0 20px;
@@ -200,6 +208,7 @@ body {
     text-decoration: none;
     color: #000000;
 }
+
 #card__image p {
     margin-top: 20px;
     margin-bottom: 40px;
