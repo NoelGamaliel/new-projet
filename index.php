@@ -156,20 +156,30 @@
         <!-- End Projets -->
 
         <!-- About As -->
-            <Section class="About">
-                <div class="about__card">
-                    1
-                </div>
-                <div class="about__card">
-                    2
-                </div>
-                <div class="about__card">
-                    3
-                </div>
-                <div class="about__card">
-                   4
-                </div>
-            </Section>
+            <div class="container-fluid About">
+                <div class="About">
+                    <div class="col-md-2 about__card">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis blanditiis magni nisi.
+                        </p>
+                    </div>
+                    <div class="col-md-2 about__card">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis blanditiis magni nisi.
+                        </p>
+                    </div>
+                    <div class="col-md-2 about__card">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis blanditiis magni nisi.
+                        </p>
+                    </div>
+                    <div class="col-md-2 about__card">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis blanditiis magni nisi.
+                        </p>
+                    </div>                    
+                </div>       
+            </div>
         <!-- END About As -->
 
         <!-- Conctact -->
@@ -211,20 +221,20 @@
                         <p>
                             Nous sommes prêt à accepter vos suggestion, qui va nous aider à mieux arranger les choses.
                         </p>
-                        <div class="form_items">
-                            <form action="/action_page.php">
-                                <label for="name">Name</label>
-                                <input class="form-control  mb-2" type="text" placeholder="e.g : Noël DIAMONA" id="name" aria-label="default input example">
-                                <label for="mail">Email</label>
-                                <input class="form-control  mb-2" type="email" placeholder="e.g :infos@ndtechhub.tech" id="mail" aria-label="default input example">
-                                <label for="subjet">subjet</label>
-                                <input class="form-control  mb-2" type="text" placeholder="subjet" name="subjet" id="subjet" aria-label="default input example">
-                                <label for="message">Message</label>
-                                <textarea class="form-control mb-2" id="exampleFormControlTextarea1"  id="message" name="message" rows="9"></textarea>
-                    
-                                <button type="submit" class="btn btn-success rounded-0 mb-4" style="width: 100%;"> SEND</button>
-                            </form>
-                        </div>
+
+                        <form action="traitement.php" method="post">
+                            <label for="name">Name :</label>
+                            <input type="text" name="name" id="name">
+                            <label for="name">email :</label>
+                            <input type="text" name="name" id="name">
+                            <label for="name">subjet :</label>
+                            <input type="text" name="name" id="name">
+                            <label for="name">Message :</label>
+                            <textarea name="message" id="" cols="30" rows="10">
+
+                            </textarea>
+                            <input type="submit" value="Send">
+                        </form>
                     </div>
                 </div>
             </section>
@@ -264,7 +274,6 @@
                             </div>
                         </div>                        
                     </div>
-
 
                     <!-- Copyright -->
                         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
